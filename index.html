@@ -1,36 +1,23 @@
-<!--
-Documentation du format :
-Schema.org - Person : http://schema.org/Person
-
-Schema Creator :
-http://schema-creator.org/person.php
-
-Google Help - Person Schema :
-https://support.google.com/webmasters/answer/146646?hl=en
-
-Outil de test des données structurées :
-http://www.google.com/webmasters/tools/richsnippets
--->
-
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-		<title>Fiche personne</title>
+		<title>Microdatas – premier exemple simple</title>
+		<meta name="author" content="Myriam Dupont">
 	    <!--[if lt IE 9]>
 	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	    <![endif]-->
 	</head>
 	<body>
-		<div>
+		<div itemscope itemtype="http://schema.org/Person">
 			<p>
-				Mon nom est ...
+				Mon nom est <span itemprop="name">Myriam</span>
 			</p>
 			<p>
-				Je suis webdesigner
+				Je suis  <i itemprop="jobTitle" lang="en">webdesigner</i>
 			</p>
 			<p>
-				Je suis belge
+				Je suis <span itemprop="nationality">belge</span>
 			</p>
 		</div>
 	</body>
